@@ -1,0 +1,62 @@
+
+.boton-inicio {
+    display: flex;
+    justify-content: flex-start; 
+    position: fixed; 
+    top: 20px; 
+    left: 20px; 
+    z-index: 100; 
+}
+
+
+.boton-inicio {
+    padding: 15px 30px; 
+    font-size: 20px; 
+    color: white; 
+    background-color: #9b59b6; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+
+.boton-inicio:hover {
+    background-color: #8e44ad; 
+}
+
+
+#reiniciar-juego {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white; 
+    background-color: #9b59b6; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+
+#reiniciar-juego:hover {
+    background-color: #d17bff; 
+    animation: pulse 0.5s infinite; 
+}
+
+
+#reiniciar-juego:active {
+    transform: scale(0.95); 
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

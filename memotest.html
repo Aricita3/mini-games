@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="facherito.css">
-    <script defer src="memotest.js"></script>
+    <link rel="stylesheet" href="/css/facherito.css">
+    <link rel="stylesheet" href="/css/boton.css">
+    <script defer src="/js/memotest.js"></script>
     <title>Memotest</title>
 </head>
 <body>
+
+   
+    <div class="boton-inicio">
+        <a href="menu.html">
+            <button class="boton-inicio">Inicio</button>
+        </a>
+    </div>
+
     <main>
         <section class="tablero">
             <h1>Memotest</h1>
@@ -27,27 +36,28 @@
                 <tr>
                     <td><button id="8" onclick="destapar(8)"></button></td>
                     <td><button id="9" onclick="destapar(9)"></button></td>
-                    <td><button id="10" onclick="destapar(10)"></button
-                        ></td>
-                        <td><button id="11" onclick="destapar(11)"></button></td>
-                    </tr>
-                    <tr>
-                        <td><button id="12" onclick="destapar(12)"></button></td>
-                        <td><button id="13" onclick="destapar(13)"></button></td>
-                        <td><button id="14" onclick="destapar(14)"></button></td>
-                        <td><button id="15" onclick="destapar(15)"></button></td>
-                    </tr>
-                </table>
-            </section>
-    
-            <section class="estadisticas">
-                <h2 id="timer">Tiempo transcurrido: 0s</h2>
-                <h2 id="aciertos">Aciertos: 0</h2>
-                <h2 id="movimientos">Movimientos: 0</h2>
-            </section>
-    
-            <button id="reiniciar" onclick="reiniciarJuego()">Reiniciar Juego</button>
-        </main>
-    </body>
-    </html>
-    
+                    <td><button id="10" onclick="destapar(10)"></button></td>
+                    <td><button id="11" onclick="destapar(11)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="12" onclick="destapar(12)"></button></td>
+                    <td><button id="13" onclick="destapar(13)"></button></td>
+                    <td><button id="14" onclick="destapar(14)"></button></td>
+                    <td><button id="15" onclick="destapar(15)"></button></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="estadisticas">
+            <h2 id="timer">Tiempo transcurrido: 0s</h2>
+            <h2 id="aciertos">Aciertos: 0</h2>
+            <h2 id="movimientos">Movimientos: 0</h2>
+        </section>
+
+      
+        <div class="boton-reiniciar">
+            <button class="reiniciar" onclick="reiniciarJuego()">Reiniciar Juego</button>
+        </div>
+    </main>
+</body>
+</html>
